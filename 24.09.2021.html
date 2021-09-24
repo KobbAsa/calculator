@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Калькулятор special for sleepy_coffex</title>
+<style>
+form {
+margin-left:40%;
+font-family:suns-serif;
+width: 300px;
+height: 900px;
+}
+</style>
+
+</head>
+<body>
+<div class ="form"><form><fieldset>
+<legend>Калькулятор</legend>
+<label> Число 1 <input type="number" id ="number1"></label><br><br><label> Число 2 <input type="number" id ="number2"></label>
+<span class="word">
+<input type="button" value="+" id="sum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="-" id="diff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="/" id="divide">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="*" id="mult">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="Очистити" id="clr">
+</span>
+</fieldset>
+</form>
+</div>
+<script>
+sum.onclick=function(){
+i=parseInt(document.getElementById('number1').value);
+k=parseInt(document.getElementById('number2').value);
+let s=i+k;
+alert(s);
+};
+diff.onclick=function(){
+i=parseInt(document.getElementById('number1').value);
+k=parseInt(document.getElementById('number2').value);
+let s=i-k;
+alert(s);
+};
+divide.onclick=function(){
+i=parseInt(document.getElementById('number1').value);
+k=parseInt(document.getElementById('number2').value);
+let s=i/k;
+alert(s);
+};
+mult.onclick=function(){
+i=parseInt(document.getElementById('number1').value);
+k=parseInt(document.getElementById('number2').value);
+let s=i*k;
+alert(s);
+};
+clr.onclick=function(){
+document.getElementById('number1').value = "";
+document.getElementById('number2').value = "";
+};
+</script>
+</body>
+</html>
